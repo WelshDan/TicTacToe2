@@ -48,7 +48,6 @@ function onTileClick (event) {
     }
 }
 
-/* 
 function updateSquare (elementId) {
     document.getElementById(elementId).innerHTML = playerIcon;
 }
@@ -82,6 +81,7 @@ function checkWinner () {
     }
 
     if (roundWon) {
+        changePlayerIcon();
         statusDisplay.textContent = `${playerIcon} WINS!`
         running = false;
     } else if (!blanks.includes("")) {
